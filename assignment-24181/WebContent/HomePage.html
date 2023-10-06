@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="HomePage.css">
+</head>
+<body>
+
+ 	<form action="acceptance">
+    <div class="wrapper">
+        <h1 id="pageTitle">Success!</h1>
+        <br>
+        <p id="thankYouMessage">Thank you for creating an account with our School. We are pleased to welcome you to the Family!</p>
+        <br>
+        <input type="button" class="btn" value="Login" onclick="window.location.href='login.html';">
+        <br>
+        <p>Please select your preferred language:</p>
+        <br>
+        <select id="languageSelector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="es">Lingala</option>
+        </select>
+    </div
+    >
+
+    <script>
+        function changeLanguage() {
+            var selectedLanguage = document.getElementById("languageSelector").value;
+            var languageData = {
+                en: {
+                    pageTitle: "Success!",
+                    thankYouMessage: "Thank you for creating an account with our School. We are pleased to welcome you to the Family!"
+                },
+                fr: {
+                    pageTitle: "Succès !",
+                    thankYouMessage: "Merci d'avoir créé un compte avec notre école. Nous sommes ravis de vous accueillir dans la famille !"
+                },
+                es: {
+                    pageTitle: "Éxito!",
+                    thankYouMessage: "Gracias por crear una cuenta en nuestra escuela. ¡Nos complace darle la bienvenida a la familia!"
+                }
+            };
+
+            // Update the page content based on the selected language
+            document.getElementById("pageTitle").textContent = languageData[selectedLanguage].pageTitle;
+            document.getElementById("thankYouMessage").textContent = languageData[selectedLanguage].thankYouMessage;
+        }
+    </script>
+    </form>
+</body>
+</html>

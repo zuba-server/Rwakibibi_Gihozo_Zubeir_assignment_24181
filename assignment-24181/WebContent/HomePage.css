@@ -1,0 +1,54 @@
+/* Set the background color to dark green */
+body {
+    background-color: darkgreen;
+    font-family: Arial, sans-serif; /* Add a font-family for better readability */
+    color: white; /* Set the text color to white */
+}
+
+/* Rest of your CSS styles remain unchanged */
+/* Style the wrapper div */
+.wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	margin-top:10rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the page title */
+#pageTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the thank you message paragraph */
+#thankYouMessage {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Style the login button */
+.btn {
+    background-color: #007bff;
+    color: white; /* Set the text color to white */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style the language selector */
+#languageSelector {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
